@@ -2,6 +2,8 @@ package com.lucas.codingdemo.service;
 
 import com.lucas.codingdemo.model.Host;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.ArrayList;
@@ -9,7 +11,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@SpringBootTest
+@ExtendWith(MockitoExtension.class)
 class FileInServiceTest {
 
     public static final String N10 = "n10,1366829460,1366831260,60|37.0,65.0,87.0,41.0,100.0,76.0,83.0,82.0,50.0,54.0";
